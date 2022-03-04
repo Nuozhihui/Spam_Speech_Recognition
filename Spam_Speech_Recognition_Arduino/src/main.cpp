@@ -31,42 +31,52 @@ void loop() {
     case 0x02:
       Serial.println("可回收垃圾 2号舵机旋转0度");
      
-      //  delay(5000);
-      //  Serial.println("延时5s, 2号舵机归为 ，1号舵机复位");
-      //  myservo2.write(0);        //舵机一旋转90°  
-      //  delay(1000);               //延迟一段时间，也就是扔垃圾的时间
-      //  myservo1.write(0);        
-      //  delay(5);                 //给舵机一个转动的时间
+       delay(5000);
+       Serial.println("延时5s, 2号舵机归为 ");
+       myservo2.write(0);        //舵机一旋转90°  
+       delay(1000);               //延迟一段时间，也就是扔垃圾的时间
+       Serial.println("延时1s,1号舵机复位");
+       myservo1.write(0);        
+       delay(5);                 //给舵机一个转动的时间
+        Serial.println("完成 可回收垃圾");
       break;
+
     case 0x03:
       Serial.println("厨余垃圾 2号舵机旋转90度");
      
-      //  delay(5000);
-      //  Serial.println("延时5s, 2号舵机归为 ，1号舵机复位");
-      //  myservo2.write(0);        //舵机一旋转90°  
-      //  delay(1000);               //延迟一段时间，也就是扔垃圾的时间
-      //  myservo1.write(0);        
-      //  delay(5);                 //给舵机一个转动的时间
+         delay(5000);
+       Serial.println("延时5s, 2号舵机归为 ");
+       myservo2.write(0);        //舵机一旋转90°  
+       delay(1000);               //延迟一段时间，也就是扔垃圾的时间
+       Serial.println("延时1s,1号舵机复位");
+       myservo1.write(0);        
+       delay(5);                 //给舵机一个转动的时间
+         Serial.println("完成 厨余垃圾");
       break;
+
     case 0x04:
       Serial.println("有害垃圾 2号舵机旋转180度 ");
      
-      //  delay(5000);
-      //  Serial.println("延时5s, 2号舵机归为 ，1号舵机复位");
-      //  myservo2.write(0);        //舵机一旋转90°  
-      //  delay(1000);               //延迟一段时间，也就是扔垃圾的时间
-      //  myservo1.write(0);        
-      //  delay(5);                 //给舵机一个转动的时间
+        delay(5000);
+       Serial.println("延时5s, 2号舵机归为 ");
+       myservo2.write(0);        //舵机一旋转90°  
+       delay(1000);               //延迟一段时间，也就是扔垃圾的时间
+       Serial.println("延时1s,1号舵机复位");
+       myservo1.write(0);        
+       delay(5);                 //给舵机一个转动的时间
+         Serial.println("完成 有害垃圾");
       break;
       case 0x05:
       Serial.println("其他垃圾垃圾 旋转270度");
      
-      //  delay(5000);
-      //  Serial.println("延时5s, 2号舵机归为 ，1号舵机复位");
-      //  myservo2.write(0);        //舵机一旋转90°  
-      //  delay(1000);               //延迟一段时间，也就是扔垃圾的时间
-      //  myservo1.write(0);        
-      //  delay(5);                 //给舵机一个转动的时间
+        delay(5000);
+       Serial.println("延时5s, 2号舵机归为 ");
+       myservo2.write(0);        //舵机一旋转90°  
+       delay(1000);               //延迟一段时间，也就是扔垃圾的时间
+       Serial.println("延时1s,1号舵机复位");
+       myservo1.write(0);        
+       delay(5);                 //给舵机一个转动的时间
+      Serial.println("完成 其他垃圾");
       break;
 
     default:
